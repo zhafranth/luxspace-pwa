@@ -10,7 +10,7 @@ import { Main, Container, Content, ImgWrapper, ImgCover } from "./style";
 import BgImage from "../../../assets/content/image-section-1.png";
 import IconPlay from "../../../assets/content/icon-play.svg";
 
-const Hero = () => {
+const Hero = ({ handleShowModals }) => {
   return (
     <Main>
       <Container>
@@ -26,7 +26,7 @@ const Hero = () => {
           <ImgWrapper>
             <ImgCover src={BgImage} alt="background images" />
             <div className="icons-play">
-              <div className="button">
+              <div className="button" onClick={handleShowModals}>
                 <img src={IconPlay} alt="Icon Play" />
               </div>
             </div>

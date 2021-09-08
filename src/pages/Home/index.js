@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 // Components
-import { Layout, Header, Hero, Partner } from "../../components";
+import { Layout, Header, Hero, Partner, Product } from "../../components";
 
 const Home = () => {
   const [showModal, setShowModal] = useState(false);
@@ -12,6 +12,7 @@ const Home = () => {
       <Header />
       <Hero handleShowModals={() => setShowModal(true)} />
       <Partner />
+      <Product />
       {/* <h2>Hello from Home</h2> */}
     </Layout>
   );

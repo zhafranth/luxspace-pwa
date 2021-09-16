@@ -23,7 +23,7 @@ const Header = () => {
           <LinkButton to="/">Delivery</LinkButton>
         </ItemBar>
         <ItemBar>
-          <LinkButton to="/">Profile</LinkButton>
+          <LinkButton to="/profile">Profile</LinkButton>
         </ItemBar>
       </ContainerBar>
     </Main>

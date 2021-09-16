@@ -5,6 +5,7 @@ import { Switch, Route } from "react-router-dom";
 
 // Pages
 const Home = lazy(() => import("./pages/Home"));
+const Profile = lazy(() => import("./pages/Profile"));
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
     >
       <Switch>
         <Route component={Home} exact path="/" />
+        <Route component={Profile} exact path="/profile" />
       </Switch>
     </Suspense>
   );

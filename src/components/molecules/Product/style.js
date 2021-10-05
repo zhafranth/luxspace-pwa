@@ -12,11 +12,16 @@ export const Container = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 2.5rem;
+  a {
+    text-decoration: none;
+  }
 `;
 
 // Card
 export const MainCard = styled.div`
   width: 24.5rem;
+  color: #000;
+
   &:hover {
     cursor: pointer;
     .hover-card {

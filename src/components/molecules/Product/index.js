@@ -22,6 +22,8 @@ const Product = () => {
       .then((res) => setItems(res.data.nodes))
       .catch((err) => console.log(err));
   }, []);
+
+  console.log(items);
   return (
     <Main>
       <Title>

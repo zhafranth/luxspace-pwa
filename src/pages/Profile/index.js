@@ -1,8 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import { Breadcrumb } from "../../components/molecules";
 import {
   Main,
-  BreadCrumb,
+  // BreadCrumb,
   Content,
   ProfileSection,
   ButtonWrapper,
@@ -46,12 +47,10 @@ const Profile = () => {
     <Layout>
       <Header />
       <Main>
-        <BreadCrumb>
-          <Link to="/">Home</Link>/<Link to="/profile">My Profile</Link>
-        </BreadCrumb>
+        <Breadcrumb tag="Details" />
         <Content>
           <ProfileSection>
-            <img src={MyProfile} alt="image profile" />
+            <img src={MyProfile} alt="profile" />
             <h5>Masayoshi Angga</h5>
             <p>Jr.Website Developer</p>
           </ProfileSection>

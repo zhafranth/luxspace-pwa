@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from "react";
 
+// Context
+// import AppContext from "../../context/AppContext";
+
 // Components
 import { Layout, Header, Hero, Partner, Product } from "../../components";
 
@@ -21,7 +24,6 @@ const Home = () => {
       window.addEventListener("online", handleSetStatus);
     };
   }, [status]);
-
   return (
     <Layout
       show={showModal}

@@ -6,10 +6,16 @@ import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter as Router } from "react-router-dom";
 
+import AppContext from "./context/AppContext";
+
+const { CartProvider } = AppContext;
+
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-      <App />
+      <CartProvider>
+        <App />
+      </CartProvider>
     </Router>
   </React.StrictMode>,
   document.getElementById("root")
